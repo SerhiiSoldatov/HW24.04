@@ -23,7 +23,7 @@ Print(mass);
 int max = 0;
 int min = 0;
 int n;
-for (var i = 0; i < mass.Length; i++)
+for (int i = 0; i < mass.Length; i++)
 {
     n = mass[i];
     min = mass[i];
