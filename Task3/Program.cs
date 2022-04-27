@@ -3,3 +3,33 @@
 // элементов массива.
 // [3 7 22 2 78] -> 76
 
+void Print(int [] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+
+
+
+int[] mass = new int[10];
+for (int i = 0; i < mass.Length; i++)
+{
+    mass[i] = new Random().Next(10, 100);
+}
+Print(mass);
+int max = 0;
+int min = 0;
+int n;
+for (var i = 0; i < mass.Length; i++)
+{
+    n = mass[i];
+    min = mass[i];
+    if (n < min) min = n;
+    if (n > max) max = n;
+}
+Console.WriteLine("Максимум: {0}; Минимум: {1}", max, min);
+int x = max - min;
+System.Console.WriteLine(x);
